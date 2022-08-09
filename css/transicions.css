@@ -1,0 +1,48 @@
+h2 {
+    transition: all 2s ease-in-out;
+    text-align: center;
+    margin: 2rem;
+    font-weight: lighter;
+    font-size: 4em;
+    color: crimson;
+}
+
+h2:hover {
+    background-color: #5a7f49;
+    color: navajowhite;
+    transform: matrix3d(2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3);
+}
+
+.capa1 {
+    transition: all 2s ease-in;
+    height:100%;
+}
+
+.capa2 {
+    transition: all 2s ease-in;
+    height:100%;
+    opacity:0;
+    transform: translate(-1000px, 20px);
+}
+
+.capa2:hover {
+    opacity:4;
+    transform: translate(0px, 20px);
+}
+
+.capa3 {
+    transition: all 2s ease-in;
+    height:100%;
+}
+
+.capa4 {
+    transition: all 2s ease-in;
+    height:95%;
+    opacity:0;
+    transform: translate(0px, 20px);
+}
+
+.capa4:hover {
+    opacity:4;
+    transform: translate(1000px, 20px);
+}

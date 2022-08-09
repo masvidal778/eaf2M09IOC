@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f053ff72c1.js" crossorigin="anonymous"></script>
+    <title>Playlist</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/guia_estils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://jplayer.org/js/prettify/prettify-jPlayer.css" rel="stylesheet" type="text/css">
+    <link href="https://jplayer.org/latest/dist/skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet"
+          type="text/css">
+    <style>
+        .jp-toggles {
+
+        }
+    </style>
+</head>
+
+<body>
+<header class="sticky-top container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="m-3">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logotip" width="25%"></a>
+            </div>
+            <div class="d-flex d-none">
+                <button class="navbar-toggler display-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="playlist.html"><i
+                            class="icones fa-solid fa-film"></i>Video Playlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transicions.html"><i
+                            class="icones fa-solid fa-tent-arrow-left-right"></i>Transicions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animacions.html"><i
+                            class="icones fa-solid fa-person-booth"></i>Animacions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grafica.html"><i
+                            class="icones fa-solid fa-chart-column"></i>Gràfica</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <main class="col-12 col-md-9 col-sm-12">
+            <section class="row mt-2">
+                <h2>Playlist</h2>
+                <article class="row">
+                    <div class="col-12 col-md-12 col-sm-12">
+                        <div id="jp_container_1" class="jp-video jp-video-270p mb-5" role="application"
+                             aria-label="media player">
+                            <div class="jp-type-playlist">
+                                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                                <div class="jp-gui">
+                                    <div class="jp-video-play">
+                                        <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                                    </div>
+                                    <div class="jp-interface">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                        <div class="jp-details">
+                                            <div class="jp-title" aria-label="title">&nbsp;</div>
+                                        </div>
+                                        <div class="jp-controls-holder">
+                                            <div class="jp-volume-controls">
+                                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                                <button class="jp-volume-max" role="button" tabindex="0">max volume
+                                                </button>
+                                                <div class="jp-volume-bar">
+                                                    <div class="jp-volume-bar-value"></div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-controls">
+                                                <button class="jp-previous" role="button" tabindex="0">previous</button>
+                                                <button class="jp-play" role="button" tabindex="0">play</button>
+                                                <button class="jp-stop" role="button" tabindex="0">stop</button>
+                                                <button class="jp-next" role="button" tabindex="0">next</button>
+                                            </div>
+                                            <div class="jp-toggles">
+                                                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                                <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+                                                <button class="jp-full-screen" role="button" tabindex="0">full screen
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jp-playlist">
+                                    <ul>
+                                        <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="jp-no-solution">
+                                    <span>Update Required</span>
+                                    To play the media you will need to either update your browser to a recent version or
+                                    update your <a
+                                        href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="row">
+                    <article class="col-12 col-md-6 col-sm-12">
+                        <h3>Com he fet la playlist</h3>
+                        <div>
+                            <p>
+                                Per fer la playlist, el primer que vaig fer fou visitar les pàgines que em recomànaveu
+                                usar en el propi eac, https://jplayer.org i la demo de
+                                https://jplayer.org/latest/demo-02-multi/</p>
+                            <p> A la pàgina https://jplayer.org hi havia un pas a pas de com fer la playlist (Quick
+                                Start Guide). Els cinc primers passos eren per descarregar i implementar els arxius
+                                necessaris perquè la playlist funcioni.</p>
+                            <p>En concret, els arxius de jPlayer, swf, jQuery, jPlayer Skin. jPlayer i jQuery contenen
+                                el codi que fa funcionar el vídeo, swf en garanteix l'ús en Flash (pels llocs web
+                                antics, que no suporten HTML5) i jPlayer Skin és per l'aspecte visual del reproductor de
+                                playlist.</p>
+                            <p> Un cop fet això, vaig passar al pas 6, escollint "next step for video", perquè a partir
+                                del pas 6, canvien els passos segons si la playlist és d'àudio o de vídeo. En aquest
+                                pas, afegeixes la interfície dels controls. Copies i enganxes el codi de Pink
+                                Flag, per tal que els controls es vegin amb l'aspecte definit en el seu CSS.</p>
+                            <p>Aquest codi crea un contenidor, on es defineixen totes les parts de la interfície del
+                                jPlayer. Primer, crea un marc on aniran els vídeos (quan es faci la part en què aquests
+                                es carreguen). És a dir ja reserva l'espai que ocuparan (jp-video-player).</p>
+                            <p>Tot seguit, defineix la barra que mostra com va avançant el vídeo en el div jp-progress,
+                                que conté la barra (jp-seek-bar) que mostra l'avenç de reproducció del vídeo
+                                (jp-play-bar), també mostra el lloc on està la reproducció actualment(jp-current-time),
+                                és a dir, és el que ens mostra el temps que porta reproduït en forma de números (00:00).
+                                i la duració total del vídeo (jp-duration).</p>
+                            <p>Després configura els títols de la playlist, dintre de jp-details, sent cadascun dels
+                                títols definits a jp-title.</p>
+                            <p>Després, el que fa és definir els controls dins de jp-controls-holder. Començant pels
+                                botons del volum (jp-volume-control), pel botó que silencia el so (jp-mute), el que posa
+                                el so al màxim (jp-volume-max) i la barra de volum (jp-volume-bar). El següent que
+                                defineix són els botons de control de reproducció (jp-controls). El jp-play i jp-stop,
+                                per iniciar i parar la reproducció. I el jp-toggles, que comprenen el jp-repeat, el
+                                jp-shuffle i el jp-full-screen perquè es repeteixi la playlist, un cop arriba al final;
+                                perquè es reprodueixin els vídeos de manera aleatòria i perquè es pugui veure a pantalla
+                                sencera.</p>
+                            <p>Finalment, usa el jp-no-solution, per informar a l'usuari que el seu navegador no suporta
+                                jPlayer.</p>
+                            <p>Copiat el codi, ja em sortia la interfície, però els botons del jp-toggle se'm repetien.
+                                Investigant que podia passar, em vaig adonar que el css dels botons definit a
+                                guia_estils.html xocava amb el css del Pink Flag. Vaig modificar els butons a
+                                guia_estils.html, de manera que ja no interferia i els butons de jp-toggles ja no es
+                                veien repetits. Va ser curiós veure que eren els únics botons del jp-controls-holder que
+                                patien la interferència del css de guia_estils.html. La resta es mostraven tal com
+                                havien de fer-ho.</p><br/>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-sm-12 mt-5">
+                        <div>
+                            <p>El següent pas és el 7, que és on et diuen d'afegir JavaScript a jPlayer video. Fins ara,
+                                només tenim la interfície i, amb JavaScript, passarem a tenir el vídeo que es reproduirà
+                                a l'espai que s'havia reservat abans per a tal fi.</p>
+                            <p>Copio i enganxo el codi, per verificar que tot funciona correctament i que es reprodueix
+                                el tràiler de Big Buck Bunny. El codi és un script de JQuery.</p>
+                            <p>Primer, defineix el tipus de script com a JavaScript. Després, document.ready(function),
+                                fa la funció que executarà el vídeo, que es configura a l'interior d'aquesta. Com que és
+                                una playlist, concretem que és el vídeo1 el que cridem aquí (jquery_jplayer_1). Posem el
+                                (this), perquè l'objecte es troba dins del mateix document. Amb
+                                (this).jPlayer("setMedia", {}), estem establint els valors del vídeo. El contingut. És a
+                                dir, definim el títol, els tipus de vídeo que té disponibles (important, perquè si només
+                                posem el vídeo en un format, si resulta incompatible amb el navegador de l'usuari,
+                                aquest no podrà veure'l. S'ha de procurar que estigui en els formats més usuals pels
+                                navegadors), amb la ruta on la funció els localitzarà per a reproduir-los, i el cartell
+                                que surt inicialment, quan encara no s'ha premut el play.</p>
+                            <p>A continuació, amb el cssSelectorAncestor, definim el contenidor on volem que vagi el
+                                vídeo, que serà l'espai que li hem reservat abans; li donem el camí que ha de seguir per
+                                trobar la funció que executa el vídeo (swfPath); li especifiquem els tipus de vídeos que
+                                ha de reproduir (important, perquè si a setMedia definim un m4v i un ogv, i a supplied
+                                només posem el m4v, l'ogv no es reproduiria, en cas de ser necessari. A continuació, es
+                                defineixen altres característiques, com difuminat amb autoBlur, suavitzar la barra de
+                                play (smoothPlayBar), etc. Però les he mantingut en false, atès que no em resultaven
+                                necessàries.</p><br/>
+                            <p>A partir d'aquest pas, hi ha un resum de la guia, però ja no vaig trobar res de la
+                                playlist i l'anàlisi de la demo, no m'acabava de clarificar com fer-la. Podia reproduir
+                                un vídeo, però no veia com fer una playlist a partir d'aquí. Buscant dins la pròpia
+                                pàgina de jPlayer, la manera de fer-ho, vaig trobar un altre exemple de playlist, a
+                                https://jplayer.org/latest/demo-02-media/, que es tractava d'una llista de reproducció
+                                que barrejava àudio i vídeo. Estudiant el codi d'aquest exemple, vaig veure com havia de
+                                procedir per afegir més vídeos i fer una playlist.</p>
+                            <p>El que havia de fer és que, dins de (document).ready(function (), la primera línia havia
+                                de ser una instància de jPlayerPlaylist, perquè si no hi ha aquesta instància, jQuery
+                                interpreta que només reproduirà un vídeo. Per tant, encara que li posés més vídeos, no
+                                funciona. La resta de codi que he usat abans per definir el vídeo, els formats, etc.,
+                                va dins d'aquesta instància. A més, usem claudator [], per posar a dins tots els vídeos
+                                que vulgui que formin part de la playlist, tal com havia fet amb el vídeo anterior
+                                (quan només tenia un vídeo). Amb aquest últim pas, ja tenim la playlist definida i
+                                funcionant.</p>
+                            <p>Gràcies per llegir l'explicació de com he fet la playlist.</p>
+                            <div>
+                                <h4>Atribució dels vídeos:</h4>
+                                <p>Vídeo de concert de Deniz Bostanov:
+                                    https://www.pexels.com/video/a-guitarist-member-of-a-band-playing-the-electric-guitar-3345545/</p>
+                                <p>Vídeo de concert de Sher Lyn:
+                                    https://www.pexels.com/video/people-watching-acrobatic-performers-2023706/</p>
+                                <p>Vídeo de dansa de Tima Miroshnichenko:
+                                    https://www.pexels.com/video/beautiful-woman-performing-dance-5124236/</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+        </main>
+        <aside class="col-12 col-md-3 col-sm-12 d-none d-sm-block">
+            <section class="row m-1">
+                <h2>Publicitat</h2>
+                <article class="col-12 col-md-12 col-sm-12 m-2">
+                    <img src="images/volldamm-luis-tosar.jpg" alt="volldamm"
+                         class="img-fluid max-width: 100% height: auto">
+                </article>
+                <article class="col-12 col-md-12 col-sm-12 m-2">
+                    <img src="images/salo-del-manga.jpg" alt="salo del manga"
+                         class="img-fluid max-width: 100% height: auto">
+                </article>
+                <article class="col-12 col-md-12 col-sm-12 m-2">
+                    <img src="images/sant-jordi.jpg" alt="sant jordi"
+                         class="img-fluid max-width: 100% height: auto">
+                </article>
+            </section>
+        </aside>
+    </div>
+</div>
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 mt-5">
+            <p>Contacta'ns
+                <i class="fa-solid fa-address-book fa-2x ms-2"></i>
+            </p>
+            <p class="mt-5">correu electrònic: info@espectacat.cat</p>
+            <p>telèfon: 687324619</p>
+            <p>adreça postal: Carrer Viladomat, 313. Barcelona</p>
+        </div>
+
+        <div class="col-12 col-sm1-12 col-md-4 mt-5 d-flex flex-column justify-content-center align-items-center">
+            <p class="mb-5">Segueix-nos a:</p>
+            <div>
+                <i class="fa-brands fa-twitter fa-2x me-2" style="color: blue"></i>
+                <i class="fa-brands fa-instagram fa-2x" style="color: crimson"></i>
+            </div>
+            <p class="mt-5">Powered by Núria Masvidal Fernández</p>
+        </div>
+        <div class="col-12 col-md-4 col-sm-12 d-flex justify-content-end">
+            <div class="row">
+                <p class="col-12 col-md-12 col-sm-12 mt-5 ms-5">Informació legal</p>
+                <p><i class="col-12 col-md-12 col-sm-12 mt-2 fa-solid fa-file-pdf fa-6x ms-5"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://jplayer.org/latest/lib/jquery.min.js" type="text/javascript"></script>
+<script src="https://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js" type="text/javascript"></script>
+<script src="https://jplayer.org/latest/dist/add-on/jplayer.playlist.min.js" type="text/javascript"></script>
+<script src="https://jplayer.org/latest/dist/add-on/jquery.jplayer.inspector.min.js" type="text/javascript"></script>
+<script src="js/playlist.js"></script>
+</body>
+
+</html>

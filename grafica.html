@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f053ff72c1.js" crossorigin="anonymous"></script>
+    <title>Gràfiques</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/guia_estils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body>
+<header class="sticky-top container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="m-3">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logotip" width="25%"></a>
+            </div>
+            <div class="d-flex d-none">
+                <button class="navbar-toggler display-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="playlist.html"><i
+                            class="icones fa-solid fa-film"></i>Video Playlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transicions.html"><i
+                            class="icones fa-solid fa-tent-arrow-left-right"></i>Transicions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animacions.html"><i
+                            class="icones fa-solid fa-person-booth"></i>Animacions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grafica.html"><i
+                            class="icones fa-solid fa-chart-column"></i>Gràfica</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <main class="col-12 col-md-10 col-sm-12">
+            <h2 class="d-flex justify-content-center">Activitat 5.3 Incorporació de gràfiques de dades</h2>
+                <div class="row">
+                    <div class="col-3 col-md-3 col-sm-3">
+                        <h3>Tipus de dades</h3>
+                        Barres <input onclick="tipusGrafica('bar')" type="radio" name="graficaEscollida" value="bar" checked>
+                        Pastís <input onclick="tipusGrafica('pie')" type="radio" name="graficaEscollida" value="pie">
+                        Donut <input onclick="tipusGrafica('doughnut')" type="radio" name="graficaEscollida" value="doughnut">
+                    </div>
+                    <fieldset class="col-8 col-md-8 col-sm-8 m-2" style="border: 2px outset black">
+                        <canvas id="grafica"></canvas>
+                    </fieldset>
+            </div>
+        </main>
+        <aside class="col-12 col-md-2 col-sm-12">
+            <section class="row">
+                <h2>Promocions</h2>
+                <article class="col-6 col-md-12 col-sm-6 d-flex flex-wrap">
+                    <h3>Lorem ipsum</h3>
+                    <img src="images/anem-junts-al-teatre.jpg" alt="anem junts al teatre"
+                         class="img-fluid max-width: 100% height: auto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto blanditiis
+                        consequatur consequuntur cum dolore dolorum eius facilis harum, ipsum iure minima nisi
+                        nobis
+                        qui quia ratione reiciendis sit tenetur.</p>
+                </article>
+                <article class="col-6 col-md-12 col-sm-6 d-flex flex-wrap">
+                    <h3>Lorem ipsum</h3>
+                    <img src="images/destripando-la-historia.jpg" alt="destripando la historia"
+                         class="img-fluid max-width: 100% height: auto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores eum necessitatibus
+                        quaerat quo tempora totam vero. Ad aut, ea et facere facilis optio quia rerum sunt
+                        temporibus totam unde. </p>
+                </article>
+            </section>
+            <section class="row m-1">
+                <h2>Publicitat</h2>
+                <article class="col-12 col-md-12 col-sm-12 m-2">
+                    <img src="images/volldamm-luis-tosar.jpg" alt="volldamm"
+                         class="img-fluid max-width: 100% height: auto">
+                </article>
+                <article class="col-12 col-md-12 col-sm-12 m-2">
+                    <img src="images/salo-del-manga.jpg" alt="salo del manga"
+                         class="img-fluid max-width: 100% height: auto">
+                </article>
+                <article class="col-12 col-md-12 col-sm-12 m-2">
+                    <img src="images/sant-jordi.jpg" alt="sant jordi"
+                         class="img-fluid max-width: 100% height: auto">
+                </article>
+            </section>
+        </aside>
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 mt-5">
+            <p>Contacta'ns
+                <i class="fa-solid fa-address-book fa-2x ms-2"></i>
+            </p>
+            <p class="mt-5">correu electrònic: info@espectacat.cat</p>
+            <p>telèfon: 687324619</p>
+            <p>adreça postal: Carrer Viladomat, 313. Barcelona</p>
+        </div>
+
+        <div class="col-12 col-sm1-12 col-md-4 mt-5 d-flex flex-column justify-content-center align-items-center">
+            <p class="mb-5">Segueix-nos a:</p>
+            <div>
+                <i class="fa-brands fa-twitter fa-2x me-2" style="color: blue"></i>
+                <i class="fa-brands fa-instagram fa-2x" style="color: crimson"></i>
+            </div>
+            <p class="mt-5">Powered by Núria Masvidal Fernández</p>
+        </div>
+        <div class="col-12 col-md-4 col-sm-12 d-flex justify-content-end">
+            <div class="row">
+                <p class="col-12 col-md-12 col-sm-12 mt-5 ms-5">Informació legal</p>
+                <p><i class="col-12 col-md-12 col-sm-12 mt-2 fa-solid fa-file-pdf fa-6x ms-5"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="js/grafica.js"></script>
+</body>
+
+</html>

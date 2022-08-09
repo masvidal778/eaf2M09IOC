@@ -1,0 +1,97 @@
+h2 {
+    position: relative;
+    text-align: center;
+
+    animation-duration: 4s;
+    animation-name: rotacio;
+    animation-iteration-count: 4;
+}
+
+@keyframes rotacio {
+    from {
+        left: 0;
+    }
+    25% {
+        left: 150px;
+        transform: rotateY(360deg) scale(2);
+        -webkit-filter: contrast(3);
+        color: #221616;
+        background-color: #b6d7a8;
+    }
+    50% {
+        left: 300px;
+        transform: rotateX(180deg) scale(2);
+        transform: rotateY(180deg) scale(2);
+        -webkit-filter: contrast(3);
+        color: #221616;
+        background-color: #7e752a;
+        text-transform: uppercase;
+    }
+    75% {
+        left: 300px;
+        transform: rotateX(360deg) scale(2);
+        -webkit-filter: contrast(3);
+        color: #221616;
+        background-color: #b6d7a8;
+        text-transform: uppercase;
+    }
+    to {
+        left: 5px;
+        color: #b6d7a8;
+    }
+}
+
+.oferta1 {
+    position: relative;
+    text-align: center;
+
+    animation-duration: 4s;
+    animation-name: apareixer;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes apareixer {
+    0% {
+        transform: translateX(-100%);
+    }
+    25%{
+        transform: translateX(-75%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.oferta2 {
+    position: relative;
+    text-align: center;
+
+    animation-duration: 4s;
+    animation-name: apareixer2;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes apareixer2 {
+    0% {
+        transform: translateX(100%);
+    }
+    25%{
+        transform: translateX(75%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    75%{
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

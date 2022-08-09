@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #b6d7a8;
+    position: sticky;
+    margin: 0;
+}
+
+main,aside{
+    background-color: rgba(233, 136, 93, 0.16);
+}
+p{
+    text-align: justify;
+}
+
+.icones{
+margin-right: 0.5rem;
+}
+
+footer{
+    background-color: #030202;
+}
+
+div a img:hover{
+    background-color: #b6d7a8;
+}
+
+.buscador-lupa {
+    display: flex;
+    background-color: white;
+    border: solid 2px;
+    border-radius: 30px;
+    height: 40px;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (max-width: 480px) {
+    .col-sm-6 {
+        float: right;
+    }
+
+}

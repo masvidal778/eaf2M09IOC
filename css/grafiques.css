@@ -1,0 +1,45 @@
+table{
+    table-layout: fixed;
+    background-color:white;
+}
+
+.activad-5{
+    width: 75%;
+    margin: 20px auto;
+}
+.container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#dt-table_wrapper {
+    display: none;
+    width: 40%;
+}
+
+#chart {
+    width: 55%;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #dt-table_wrapper,
+    #chart {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #dt-table_wrapper {
+        margin-right: 0;
+    }
+}
